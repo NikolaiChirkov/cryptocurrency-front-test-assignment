@@ -1,0 +1,15 @@
+@import "/src/styles/colors/index.scss";
+
+.root {
+  position: relative;
+  width: 100%;
+
+  &__validation {
+    color: get-color("font-danger");
+  }
+
+  &__addonAfter {
+    margin: -12px -16px -12px 0;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,26 @@
+@import "/src/styles/breakpoints/index.scss";
+
+.root {
+  flex-direction: column;
+
+  @include breakpoint("md") {
+    flex-direction: row;
+  }
+
+  &__input {
+    margin-bottom: 16px;
+
+    @include breakpoint("md") {
+      margin-right: 32px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__button {
+    width: 100%;
+
+    @include breakpoint("md") {
+      width: 30%;
+    }
+  }
+}

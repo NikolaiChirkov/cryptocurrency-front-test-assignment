@@ -1,0 +1,29 @@
+@import "/src/styles/colors/index.scss";
+
+.root {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 12px 20px;
+  background-color: get-color("background__select");
+
+  &:hover {
+    background-color: get-color("background__select__active");
+  }
+
+  &__icon {
+    margin-right: 12px;
+  }
+
+  &__ticker {
+    margin-right: 16px;
+    padding-top: 2px;
+    text-transform: uppercase;
+  }
+
+  &__name {
+    padding-top: 2px;
+  }
+}

@@ -1,0 +1,28 @@
+@import "/src/styles/breakpoints/index.scss";
+
+.root {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  margin: 20px 0;
+  padding: 0;
+
+  @include breakpoint("md") {
+    justify-content: center;
+    width: 24px;
+    height: auto;
+    margin: 0 28px;
+    padding: 8px 0;
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+    transform: rotate(90deg);
+
+    @include breakpoint("md") {
+      transform: none;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import "/src/styles/breakpoints/index.scss";
+
+.root {
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 32px;
+
+  @include breakpoint("md") {
+    flex-direction: row;
+  }
+}

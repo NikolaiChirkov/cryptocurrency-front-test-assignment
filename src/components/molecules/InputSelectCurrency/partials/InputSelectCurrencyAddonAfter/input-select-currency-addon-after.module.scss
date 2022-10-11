@@ -1,0 +1,21 @@
+@import "/src/styles/colors/index.scss";
+
+.root {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 100%;
+  margin-left: 8px;
+  padding: 0 12px 0 32px;
+  border-left: 1px solid get-color("border-primary");
+
+  &__icon {
+    margin-right: 14px;
+  }
+
+  &__text {
+    padding-top: 2px;
+    margin-right: 20px;
+    text-transform: uppercase;
+  }
+}

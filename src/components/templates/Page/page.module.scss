@@ -1,0 +1,13 @@
+@import "/src/styles/breakpoints/index.scss";
+
+.root {
+  padding: 0 16px;
+
+  @include breakpoint("lg") {
+    padding: 0 160px;
+  }
+
+  @include breakpoint("xl") {
+    padding: 0 220px
+  }
+}

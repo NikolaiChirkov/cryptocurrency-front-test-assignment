@@ -1,0 +1,43 @@
+@import "/src/styles/colors/index.scss";
+
+.root {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  padding: 0 20px;
+  border: 1px solid get-color("border-primary");
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: get-color("background-select");
+  overflow: hidden;
+  z-index: 100;
+
+  &:hover {
+    border: 1px solid get-color("border-primary");
+  }
+
+  &__input {
+    width: 100%;
+    padding: 12px 8px;
+    margin: 0 -8px;
+    border: none;
+    border-bottom: 1px solid get-color("border-primary");
+    border-radius: 5px;
+    background-color: get-color("background-select");
+    font-size: 14px;
+    outline: none;
+
+    &:active {
+      outline: none;
+      border: none;
+    }
+  }
+
+  &__list {
+    max-height: 196px;
+    padding: 0;
+    overflow-y: auto;
+    list-style: none;
+  }
+}
